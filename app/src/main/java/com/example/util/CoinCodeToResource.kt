@@ -1,6 +1,7 @@
-package com.plcoding.cryptotracker.util
+package com.example.util
 
-import com.plcoding.cryptotracker.R
+import com.example.cryptomonitoringapp.R
+
 
 fun getDrawableIdForCoin(symbol: String): Int {
     return when (symbol.uppercase()) {

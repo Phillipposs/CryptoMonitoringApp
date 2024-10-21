@@ -1,4 +1,4 @@
-package com.example.util
+package com.example.cryptomonitoringapp.core.domain.util
 
 typealias DomainError = Error
 

@@ -1,4 +1,4 @@
-package com.example.cryptomonitoringapp.domain
+package com.example.cryptomonitoringapp.crypto.domain
 
 data class Coin(
     val id: String,

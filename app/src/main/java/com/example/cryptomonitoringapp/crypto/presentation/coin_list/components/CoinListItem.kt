@@ -25,8 +25,7 @@ import androidx.compose.ui.tooling.preview.PreviewDynamicColors
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.cryptomonitoringapp.domain.Coin
-import com.example.cryptomonitoringapp.presentation.coin_list.components.PriceChange
+import com.example.cryptomonitoringapp.crypto.domain.Coin
 import com.example.cryptomonitoringapp.presentation.models.CoinUi
 import com.example.cryptomonitoringapp.presentation.models.toCoinUi
 import com.example.ui.theme.CryptoTrackerTheme

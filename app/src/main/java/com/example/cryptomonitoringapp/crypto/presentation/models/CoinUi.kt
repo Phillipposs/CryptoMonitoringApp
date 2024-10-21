@@ -1,8 +1,8 @@
 package com.example.cryptomonitoringapp.presentation.models
 
 import androidx.annotation.DrawableRes
-import com.example.cryptomonitoringapp.domain.Coin
-import com.example.util.getDrawableIdForCoin
+import com.example.cryptomonitoringapp.crypto.domain.Coin
+import com.example.cryptomonitoringapp.core.presentation.util.getDrawableIdForCoin
 import java.text.NumberFormat
 import java.util.Locale
 

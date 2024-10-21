@@ -1,4 +1,4 @@
-package com.example.cryptomonitoringapp.presentation.coin_list
+package com.example.cryptomonitoringapp.crypto.presentation.coin_list
 
 import androidx.compose.runtime.Immutable
 import com.example.cryptomonitoringapp.presentation.models.CoinUi

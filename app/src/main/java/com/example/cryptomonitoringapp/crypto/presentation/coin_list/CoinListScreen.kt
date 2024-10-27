@@ -21,6 +21,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.repeatOnLifecycle
 import com.example.cryptomonitoringapp.core.presentation.util.toString
+import com.example.cryptomonitoringapp.crypto.domain.Coin
+import com.example.cryptomonitoringapp.crypto.presentation.coin_list.CoinListAction
 import com.example.cryptomonitoringapp.crypto.presentation.coin_list.CoinListEvent
 import com.example.cryptomonitoringapp.crypto.presentation.coin_list.CoinListState
 import com.example.cryptomonitoringapp.presentation.coin_list.components.CoinListItem
@@ -34,6 +36,7 @@ import kotlinx.coroutines.withContext
 @Composable
 fun CoinListScreen(
     state: CoinListState,
+    onAction : (CoinListAction) -> Unit,
     modifier: Modifier = Modifier
 ){
     if(state.isLoading){
@@ -53,7 +56,9 @@ fun CoinListScreen(
         ) {
             items(state.coins){coinUi ->
                 CoinListItem(coinUi = coinUi,
-                    onClick = { /*TODO*/ },
+                    onClick = {
+                        onAction(CoinListAction.OnCoinClick(coinUi))
+                    },
                     modifier = Modifier.fillParentMaxWidth()
                 )
                 HorizontalDivider()
@@ -72,7 +77,8 @@ private fun CoinListScreenPreview() {
            }
        ),
            modifier = Modifier
-               .background((MaterialTheme.colorScheme.background))
+               .background((MaterialTheme.colorScheme.background)),
+           onAction = {}
 
        )
    }

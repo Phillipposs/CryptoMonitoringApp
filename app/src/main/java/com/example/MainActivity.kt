@@ -18,7 +18,7 @@ import com.example.cryptomonitoringapp.crypto.presentation.coin_detail.CoinDetai
 import com.example.cryptomonitoringapp.crypto.presentation.coin_list.CoinListEvent
 import com.example.cryptomonitoringapp.crypto.presentation.coin_list.CoinListViewModel
 import com.example.cryptomonitoringapp.presentation.coin_list.CoinListScreen
-import com.example.ui.theme.CryptoTrackerTheme
+import com.example.ui.theme.CryptoMonitoringAppTheme
 import org.koin.androidx.compose.koinViewModel
 
 class MainActivity : ComponentActivity() {
@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            CryptoTrackerTheme {
+            CryptoMonitoringAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     val viewModel = koinViewModel<CoinListViewModel>()
                     val state by viewModel.state.collectAsState()

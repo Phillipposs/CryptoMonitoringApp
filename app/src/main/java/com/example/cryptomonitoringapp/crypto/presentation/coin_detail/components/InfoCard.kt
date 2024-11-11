@@ -13,7 +13,6 @@ import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.currentComposer
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
@@ -21,14 +20,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.vectorResource
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.cryptomonitoringapp.R
-import com.example.ui.theme.CryptoTrackerTheme
+import com.example.ui.theme.CryptoMonitoringAppTheme
 
 @Composable
 fun InfoCard(
@@ -113,7 +111,7 @@ fun InfoCard(
 @PreviewLightDark
 @Composable
 private fun InfoCardPreview(){
-    CryptoTrackerTheme {
+    CryptoMonitoringAppTheme {
         InfoCard(title = "Price", formattedText = "$ 65, 555.44", icon =ImageVector.vectorResource(
             id = R.drawable.dollar
         ) )

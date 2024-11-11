@@ -21,7 +21,7 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.cryptomonitoringapp.presentation.models.DisplayableNumber
-import com.example.ui.theme.CryptoTrackerTheme
+import com.example.ui.theme.CryptoMonitoringAppTheme
 import com.example.ui.theme.greenBackground
 
 @Composable
@@ -67,7 +67,7 @@ fun PriceChange(
 @PreviewLightDark
 @Composable
 private fun PriceChangePreview() {
-    CryptoTrackerTheme {
+    CryptoMonitoringAppTheme {
         PriceChange(change = DisplayableNumber(value = 2.43, formatted = "2.43")
         )
     }

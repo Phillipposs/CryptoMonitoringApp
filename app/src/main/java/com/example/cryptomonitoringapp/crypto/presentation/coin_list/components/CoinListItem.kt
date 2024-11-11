@@ -28,7 +28,7 @@ import androidx.compose.ui.unit.sp
 import com.example.cryptomonitoringapp.crypto.domain.Coin
 import com.example.cryptomonitoringapp.presentation.models.CoinUi
 import com.example.cryptomonitoringapp.presentation.models.toCoinUi
-import com.example.ui.theme.CryptoTrackerTheme
+import com.example.ui.theme.CryptoMonitoringAppTheme
 
 @Composable
 fun CoinListItem(
@@ -84,7 +84,7 @@ fun CoinListItem(
 @PreviewDynamicColors
 @Composable
 private fun CoinListItemPreview(){
-    CryptoTrackerTheme {
+    CryptoMonitoringAppTheme {
         CoinListItem(
              coinUi = previewCoin,
              onClick = {},
